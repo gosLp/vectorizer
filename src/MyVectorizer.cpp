@@ -65,7 +65,7 @@ PreservedAnalyses MyVectorizer::run(Function &F, FunctionAnalysisManager &FAM) {
 
 
         // Print the loop blocks for debbugging
-        // errs()
+        errs() << " Found a loop in function : " << F.getName() << "\n";
     }
     // ...
     // Changed = true; // if we did something
